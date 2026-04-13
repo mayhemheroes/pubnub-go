@@ -1,7 +1,7 @@
 package fuzzPubnub
 
 import "strconv"
-import "github.com/pubnub/go/v7"
+import "github.com/pubnub/go/v8"
 
 func mayhemit(bytes []byte) int {
 

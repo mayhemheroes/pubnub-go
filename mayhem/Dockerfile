@@ -1,4 +1,4 @@
-FROM golang:1.18 as builder
+FROM golang:1.25 as builder
 
 COPY . /pubnub-go
 WORKDIR /pubnub-go/mayhem
