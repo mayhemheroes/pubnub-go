@@ -10,5 +10,5 @@ RUN apt update && apt install -y clang
 RUN go-fuzz-build -libfuzzer -o fuzzPubnub.a && \
     clang -fsanitize=fuzzer fuzzPubnub.a -o fuzzPubnub.libfuzzer
 
-FROM debian:bookworm-slim
+FROM debian:trixie-slim
 COPY --from=builder /pubnub-go/mayhem/fuzzPubnub.libfuzzer /
