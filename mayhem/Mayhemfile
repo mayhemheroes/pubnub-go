@@ -1,0 +1,5 @@
+project: pubnub-go
+target: pubnub-go
+cmds:
+  - cmd: /mayhem/pubnub-go
+    libfuzzer: true
